@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 HELP.md
 target/
 !.mvn/wrapper/maven-wrapper.jar
@@ -32,8 +32,7 @@ build/
 
 ### VS Code ###
 .vscode/
-=======
-target/
+
 pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.versionsBackup
@@ -50,4 +49,4 @@ buildNumber.properties
 .project
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
->>>>>>> cd3a6b1455862bc7b9290fca8f83ebf5c99a2b23
+/.mvn/

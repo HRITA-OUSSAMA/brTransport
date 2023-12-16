@@ -1,8 +1,9 @@
 
-FROM openjdk:17-oracle
+FROM mysql:latest
 
-COPY target/*.jar brTransport_app.jar
+ENV MYSQL_ROOT_PASSWORD=root-password
 
-EXPOSE 9011
+COPY ./schema.sql /docker-entrypoint-initdb.d/
 
-ENTRYPOINT ["java","-jar","brTransport_app.jar"]
+EXPOSE 3306
+
