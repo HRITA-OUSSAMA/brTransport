@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+}
+.connImg img{
+    position: relative;
+    width: 100%;
+    height: 649px;
+}
+.connexion{
+    position: absolute;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255,0.5);
+    top: 20%;
+    width: 35%;
+    left: 32.5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h1{
+    text-align: center;
+}
+label,input{
+    display: block;
+    border: none;
+    outline: none;
+}
+form{
+    margin-left: 15%;
+}
+input:not(input[type="submit"]){
+    border: none;
+    border-bottom: 3px solid rgba(0, 0, 0,0.5);
+}
+input{
+    margin-bottom: 12px;
+    width: 80%;
+    height: 25px;
+}
+input[type="submit"]{
+    background-color: rgb(0, 0, 255);
+    height: 30px;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
+#ins{
+    display: block;
+    width: 80%;
+    background-color: rgb(0, 0, 255);
+    text-align: center;
+    padding: 5px 0;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 60px;
+}
+#ins,input[type="submit"]{
+     font-size: 15px;
+}
+#ins,input{
+    border-radius: 3px;
+}
+input:not(input[type="submit"]){
+    padding-left: 5px;
+}
+input:not(input[type="submit"])::placeholder{
+    color: rgba(0, 0, 0,0.3);
+}
+label{
+    margin-top: 6px;
+    margin-bottom: 3px;
+}
+#lins{
+    margin-left: 15%;
+}
+#mpo{
+    color: rgba(0, 0, 0,0.7);
+    display: block;
+    margin-top:3px;
+    margin-bottom: 10px;
+}
+#mpo:hover{
+    color: rgba(0, 0, 0,1);
+}

@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+}
+.connImg img{
+    position: relative;
+    width: 100%;
+    height: 649px;
+}
+.connexion{
+    position: absolute;
+    border-radius: 10px;
+   background-color: rgba(255, 255, 255,0.5);
+    top: 20%;
+    width: 65%;
+    height: 450px;
+    left: 20%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-bottom: 20px;
+    font-size: 15px;
+}
+h1{
+    text-align: center;
+}
+#line{
+    margin-top: -10px;
+    background-color: yellow;
+    width: 30%;
+    height: 4px;
+    margin-left: 35%;
+}
+#name input{
+    display: inline-block;
+}
+.ops{
+    margin-top: 20px;
+    overflow: auto;
+    width: 95%;
+    margin-left: 2.5%;
+    height: 75%;
+    border: 0.5px solid rgb(155, 155, 155);
+    border-radius: 8px;
+    padding-top: 5px;
+}
+.op{
+	position:relative;
+    width: 95%;
+    margin-left: 2%;
+    border: 1px solid rgb(122, 122, 122);
+    border-radius: 8px;
+    margin-top: 5px;
+    padding: 10px 5px;
+    background-color: white;
+}
+.op input{
+    display: none;
+}
+.opSpan{
+    margin-left: 50px;
+}
+.opi1{
+    position: absolute;
+    right: 5px;
+}
+.opi1 span{
+    margin-right: 10px;
+}
+.opi2 span{
+    margin-right: 10px;
+}
+#opid{
+    margin-left: 10px;
+}
+.opi1,.opi2{
+    position: absolute;
+    right: 5px;
+    top:8px;
+}
+
+.payerBtns ,.detailBtns1,.detailBtns2{
+        width: 90px;
+        height: 23px;
+        border: none;
+        border-radius: 5px;
+        color: white;
+}
+.detailBtns2{
+    width: 190px !important;
+}
+.payerBtns{
+   background-color: rgb(53,148,57)
+}
+.detailBtns1,.detailBtns2{
+    background-color: blue;
+}
+.payerBtns ,.detailBtns1,.detailBtns2,.deleteBtns{
+	cursor:pointer;
+}
+.deleteBtns{
+	color: red;
+	background-color: white;
+	border: none;
+}

@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+}
+.conImg img{
+    position: relative;
+    width: 100%;
+    height: 649px;
+}
+.contact{
+   position: absolute;
+   background-color: rgb(255, 255, 255);
+   top: 20%;
+   width: 40%;
+   left: 30%;
+   text-align: center;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   padding: 20px;
+   border-radius: 5px;
+}
+h1{
+    color: red;
+}
+.fa-solid{
+     
+}
