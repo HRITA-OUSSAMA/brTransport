@@ -13,12 +13,15 @@ import jakarta.servlet.http.HttpServletRequest;
 
 @Service
 public class MarchandiseService {
-	
-	@Autowired
-	MarchandiseRepository marchandiseRepository;
 
-	public void saveMarchandise(Marchandise marchandise) {
-		marchandiseRepository.save(marchandise);
+	private final MarchandiseRepository marchandiseRepository;
+
+	public MarchandiseService(MarchandiseRepository marchandiseRepository) {
+		this.marchandiseRepository = marchandiseRepository;
+	}
+
+	public Marchandise saveMarchandise(Marchandise marchandise) {
+        return marchandiseRepository.save(marchandise);
 	}
 	
 	public List<Marchandise> getMarchandisesByAttribute(String hauteur,String largeur,String longueur,String poids,String type,HttpServletRequest request) {

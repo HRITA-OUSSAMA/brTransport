@@ -23,6 +23,7 @@ public class Marchandise {
 	
     private String type;
 
+
 	public int getMarchandise_id() {
 		return marchandise_id;
 	}
