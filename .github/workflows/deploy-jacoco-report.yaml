@@ -23,8 +23,8 @@ jobs:
         run: mvn -B package --file pom.xml
       - name: Deploy Jacoco report to Codecov
         run: |
-          apt-get update
-          apt-get install -y python3-pip
+          sudo apt-get update
+          sudo apt-get install -y python3-pip
           pip3 install codecov
           codecov -f target/site/jacoco/jacoco.xml -t 455e3a8b-8759-41f1-af90-48f816a82e86
 
