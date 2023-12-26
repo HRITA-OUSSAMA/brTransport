@@ -13,11 +13,23 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name = "responsable")
+@NoArgsConstructor
 public class Responsable {
-	
+
+	public Responsable(String cin, String genre, String nom, String prenom, String email, String password) {
+		this.cin = cin;
+		this.genre = genre;
+		this.nom = nom;
+		this.prenom = prenom;
+		this.email = email;
+		this.password = password;
+	}
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int responsable_id;
