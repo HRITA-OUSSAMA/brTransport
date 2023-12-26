@@ -21,8 +21,8 @@ public class UserService {
 	public Iterable<User> getUsers(){
 		return userRepository.findAll();
 	}
-	public void saveUser(User user) {
-		userRepository.save(user);
+	public User saveUser(User user) {
+		return userRepository.save(user);
 	}
     public User getUserMail(String mail) {
     	return userRepository.findByMail(mail);
