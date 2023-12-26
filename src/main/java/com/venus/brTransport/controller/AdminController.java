@@ -22,7 +22,7 @@ import com.venus.brTransport.service.OperationService;
 import jakarta.servlet.http.HttpServletRequest;
 
 @Controller
-public class adminController {
+public class AdminController {
      @Autowired
      AdminService adminService;
      @Autowired

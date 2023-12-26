@@ -1,4 +1,4 @@
-package com.venus.brTransport.Service.Unit_Tests;
+package com.venus.brTransport.Service.Unit_Tests.service;
 
 
 import com.fasterxml.classmate.Annotations;
