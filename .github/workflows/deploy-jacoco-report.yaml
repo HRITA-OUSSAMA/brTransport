@@ -3,7 +3,7 @@ name: Jacoco Report CI
 on:
   push:
     branches:
-      - add-jacoco
+      - main
 
 jobs:
   build:
