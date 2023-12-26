@@ -1,0 +1,31 @@
+name: Jacoco Report CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # run the database
+      - name: Start database
+        run: |
+          docker build -t my-mysql .
+          docker run -p 3306:3306 -d my-mysql
+      - name: Set up JDK 17
+        uses: actions/setup-java@v1
+        with:
+          java-version: 17
+      - name: Build with Maven
+        run: mvn -B package --file pom.xml
+      - name: Deploy Jacoco report to Codecov
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python3-pip
+          pip3 install codecov
+          codecov -f target/site/jacoco/jacoco.xml -t 455e3a8b-8759-41f1-af90-48f816a82e86
+
+        
