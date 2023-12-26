@@ -52,7 +52,7 @@ public class MarchandiseServiceUnitTest {
     }
 
     @Test
-    public void GivenSession_When(){
+    public void GivenSession_WhenGetAttributes_ThenTheTwoMarchandiseInstancesShouldEqualed(){
 
         String hauteur="hauteur";
         String largeur="largeur";
