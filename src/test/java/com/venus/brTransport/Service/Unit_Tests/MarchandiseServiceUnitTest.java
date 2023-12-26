@@ -1,4 +1,4 @@
-package com.venus.brTransport.Service.Unit_Tests.service;
+package com.venus.brTransport.Service.Unit_Tests;
 
 import com.venus.brTransport.model.Marchandise;
 import com.venus.brTransport.repository.MarchandiseRepository;
