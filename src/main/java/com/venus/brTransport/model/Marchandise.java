@@ -71,6 +71,16 @@ public class Marchandise {
 	public void setType(String type) {
 		this.type = type;
 	}
-	
-   
+
+	@Override
+	public String toString() {
+		return "Marchandise{" +
+				"marchandise_id=" + marchandise_id +
+				", hauteur=" + hauteur +
+				", largeur=" + largeur +
+				", longueur=" + longueur +
+				", poids=" + poids +
+				", type='" + type + '\'' +
+				'}';
+	}
 }
