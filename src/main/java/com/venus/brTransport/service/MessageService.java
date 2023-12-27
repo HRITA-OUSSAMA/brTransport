@@ -10,18 +10,18 @@ import com.venus.brTransport.repository.ContactRepository;
 
 @Service
 public class MessageService {
-	@Autowired
-	ContactRepository messageRepository;
+
+	  @Autowired
+	  ContactRepository messageRepository;
 	
-      public void saveMessage(Contact message) {
-    	  messageRepository.save(message);
+	  public Contact saveMessage(Contact message) {
+
+		  return messageRepository.save(message);
       }
-      
-      public List<Contact> getMessages(){
-    	 return (List<Contact>) messageRepository.findAll();
+	  public List<Contact> getMessages(){
+		  return (List<Contact>) messageRepository.findAll();
       }
-      
-      public int getMessagesNoVueNumber() {
+	  public int getMessagesNoVueNumber() {
     	  int n=0;
     	  List<Contact> contacts=getMessages();
     	  for(int i=0;i<contacts.size();i++) {
