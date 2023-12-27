@@ -1,31 +1,26 @@
-package com.venus.brTransport.Service.Unit_Tests;
+package com.venus.brTransport.Service.Integration_Tests;
+
 
 import com.venus.brTransport.model.Marchandise;
-import com.venus.brTransport.repository.MarchandiseRepository;
 import com.venus.brTransport.service.MarchandiseService;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
-import org.h2.command.dml.MergeUsing;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
 
-import java.util.ArrayList;
 import java.util.List;
 
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.*;
-import static org.assertj.core.api.Assertions.*;
+import static org.mockito.Mockito.verify;
 
 @SpringBootTest
-public class MarchandiseServiceUnitTest {
+public class MarchandiseServiceIntegrationTest {
 
     @Autowired
     MarchandiseService marchandiseService;
-
-    @MockBean
-    MarchandiseRepository marchandiseRepository;
 
     @Mock
     HttpServletRequest request;
@@ -33,20 +28,18 @@ public class MarchandiseServiceUnitTest {
     @Test
     public void GivenMarchandise_WhenSaved_ThenItShouldBeSaved(){
 
+        //Given
         Marchandise marchandise=new Marchandise();
         marchandise.setHauteur(3.0);
         marchandise.setLargeur(2.0);
         marchandise.setLongueur(5.0);
         marchandise.setPoids(20.0);
         marchandise.setType("MARCHANDISE GENERALE");
-        //Given
-        when(marchandiseRepository.save(marchandise)).thenReturn(marchandise);
 
         //When
         final Marchandise marchandiseSaved=marchandiseService.saveMarchandise(marchandise);
 
         //Then
-        verify(marchandiseRepository).save(marchandise);
         assertThat(marchandiseSaved).isEqualTo(marchandise);
 
     }
@@ -93,6 +86,4 @@ public class MarchandiseServiceUnitTest {
         assertThat(returnedMarchandise).isEqualToComparingFieldByField(marchandise);
 
     }
-
-
 }
