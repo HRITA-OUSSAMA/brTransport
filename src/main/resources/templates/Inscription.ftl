@@ -17,18 +17,18 @@
     <div class="contact">
         <h1>Inscrivez-vous</h1>
         <form action="/saveUser" method="post">
-            <select name="genre">
+            <select name="genre" id="gender">
                 <option value="M">M</option>
                 <option value="Mme">Mme</option>
                 <option value="Mlle">Mlle</option>
             </select>
-            <input type="text" placeholder="Nom" name="nom" required />
-            <input type="text" placeholder="Prénom" name="prenom" required />
-            <input type="text" placeholder="Téléphone" name="telephone" required />
-            <input type="text" placeholder="Adresse" name="adresse" required />
-            <input type="email" placeholder="E-mail" name="mail" required />
-            <input type="password" placeholder="Mot de passe" name="password" required />
-             <button type="submit">Enregistrer</button>
+            <input type="text" placeholder="Nom" name="nom" id="lastName" required />
+            <input type="text" placeholder="Prénom" name="prenom" id="firstName" required  />
+            <input type="text" placeholder="Téléphone" name="telephone" id="phoneNumber" required />
+            <input type="text" placeholder="Adresse" name="adresse" id="adress" required />
+            <input type="email" placeholder="E-mail" name="mail" id="email" required />
+            <input type="password" placeholder="Mot de passe" name="password" id="password" required />
+             <button type="submit" id="submit">Enregistrer</button>
         </form>
     </div>
 </body>

@@ -12,7 +12,7 @@
     <div class="conImg">
         <img src="/Images/img1.jpg" alt="">
      </div>
-    <div class="contact">
+    <div class="contact" id="message">
         <img src="/Images/checked.png" width="150px">
         <h1>
         <#if u??>
